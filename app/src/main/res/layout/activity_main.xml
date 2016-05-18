@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@drawable/universo"
+    tools:context="gabrielgarcia.peluchesapp.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/avengers"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="16dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blanco"
+            android:text="BASE DE DATOS PELUCHESAPP"
+            android:layout_gravity="center"
+            android:textSize="22dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="ID Peluche"
+                android:id="@+id/textid"
+                android:inputType="number"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/blanco"
+                android:textColorHint="@color/gris"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Nombre"
+                android:layout_alignParentRight="true"
+                android:id="@+id/textnombre"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/blanco"
+                android:textColorHint="@color/gris"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textcantidad"
+                android:layout_below="@+id/textnombre"
+                android:hint="Cantidad"
+                android:inputType="number"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/blanco"
+                android:textColorHint="@color/gris"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textvalor"
+                android:layout_below="@+id/textnombre"
+                android:hint=" $ Valor"
+                android:inputType="number"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_toRightOf="@+id/textcantidad"
+                android:textColor="@color/blanco"
+                android:textColorHint="@color/gris"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agregar"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textSize="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_toLeftOf="@+id/buscar"
+                android:layout_below="@+id/textcantidad"
+                android:layout_marginRight="6dp"
+                android:id="@+id/agregar"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buscar"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textSize="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/textcantidad"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/buscar"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="eliminar"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textSize="16dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/textcantidad"
+                android:layout_toRightOf="@+id/buscar"
+                android:id="@+id/eliminar"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Actualizar"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textSize="16dp"
+                android:layout_below="@+id/buscar"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/actualizar"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ganancias"
+                android:textSize="16dp"
+                android:layout_below="@+id/actualizar"
+                android:id="@+id/gananciasto"
+                android:layout_marginLeft="70dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Venta"
+                android:layout_below="@+id/actualizar"
+                android:id="@+id/venta"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/gananciasto"/>
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/blanco"
+        android:background="@color/colorPrimaryDark"
+        android:text="" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+      <!--      <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingresar"
+                android:textSize="20dp"
+                android:id="@+id/bInsertar"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Actualizar"
+                android:textSize="20dp"
+                android:id="@+id/bActualizar"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eliminar"
+                android:textSize="20dp"
+                android:id="@+id/bEliminar"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consultar"
+                android:textSize="20dp"
+                android:id="@+id/bConsultar"/>  -->
+
+
+
+
+

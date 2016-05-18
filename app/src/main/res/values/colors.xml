@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E71212</color>
+    <color name="colorPrimaryDark">#E83D3D</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="gris">#DEDEDE</color>
+    <color name="capitanamerica">#3567FF</color>
+    <color name="fondorojo">#FF4081</color>
+</resources>
